@@ -51,7 +51,13 @@ module.exports = function (grunt) {
                     ]
                 }
             }
-        }
+        },
+				open: {
+	        server: {
+	            path: 'http://localhost:9000'
+	        }
+				}
+
 
     });
 
@@ -59,6 +65,7 @@ module.exports = function (grunt) {
         grunt.task.run([
             'shell:makeHTML',
             'connect:livereload',
+            'open',
             'watch'
         ]);
     });
