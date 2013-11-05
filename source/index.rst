@@ -9,6 +9,7 @@ Inhaltsverzeichnis:
    basics
    grundlagen/index
    anwendungen/index
+   serien/index
 
 
 

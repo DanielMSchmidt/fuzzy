@@ -1,0 +1,5 @@
+Serien
+******
+
+.. toctree::
+  serie1
