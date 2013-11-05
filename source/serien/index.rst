@@ -2,4 +2,3 @@ Serien
 ******
 
 .. toctree::
-  serie1
