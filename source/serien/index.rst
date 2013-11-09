@@ -2,3 +2,4 @@ Serien
 ******
 
 .. toctree::
+	1

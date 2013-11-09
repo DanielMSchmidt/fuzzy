@@ -1,0 +1,24 @@
+*******
+Serie 1
+*******
+
+
+Aufgabe 2
+==========
+
+a)
+----
+
+.. math::
+  \mu_H(n) = \left\{
+    \begin{array}{ll}
+      0  & \mbox{falls } n > 6 \\
+      1 & \mbox{falls } n \le 6
+    \end{array}
+  \right.
+
+
+b)
+----
+
+Möglich ist ein scharfer Begriff, denn eine Handlung ist entweder möglich oder unmöglich. Kaum möglich macht nur eingeschränkt Sinn, z.B. wenn man über eine Wahrscheinlichkeit spricht, wie "Es ist möglich mit 2 Würfeln einen 12 Augen zu würfeln.". Hier wäre der Wurf zwar unwahrscheinlich aber möglich. Da wir hier aber über die Möglichkeit etwas zu tun sprechen macht nur die scharfe Bedeutung des Begriffes Sinn.
