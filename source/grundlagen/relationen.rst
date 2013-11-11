@@ -11,7 +11,8 @@ Beispiel
 
 Eine Relation "ungefähr gleich", sei gegeben als :math:`X_1 = X_2 = \mathbb{N}, x \in X_1, y \in X_2`, so ist :math:`\mu_{ungefähr gleich}(x,y) = max \{ 0, 1 - a \mid x - y \mid\}` mit Parameter a > 0.
 
-.. todo:: 1. Bild einfügen
+.. image:: http://i.imgur.com/JclSADu.jpg
+  :width: 800
 
 
 
@@ -44,8 +45,8 @@ Seien :math:`K \in F(X_1 \times X_2), S \in F(X_2 \times X_3)`, so ist die Verke
 Beispiel
 --------
 
-.. todo:: 2. Bild einfügen
-
+.. image:: http://i.imgur.com/mQVZHXI.jpg
+  :width: 800
 
 
 Allgemeine Fuzzy-Relationen
@@ -83,8 +84,9 @@ Die totale Projektion :math:`pr_{Total}(R)` ist dann definiert als:
 .. math::
   \mu_{pr_{Total}} := sup_{x \in X_1} sup_{y \in X_2} \{ \mu (x,y) \}
 
-.. todo:: Abbildung 3. Seite oben
 
+.. image:: http://i.imgur.com/DKN1AbL.jpg
+  :width: 800
 
 
 
