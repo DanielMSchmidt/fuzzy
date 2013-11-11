@@ -7,3 +7,4 @@ Grundlagen der Fuzzy-Set-Theorie
    fuzzy
    setstofuzzysets
    operationen
+   relationen
