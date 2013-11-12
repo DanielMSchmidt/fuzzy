@@ -5,3 +5,4 @@ Anwendungen
    :maxdepth: 2
 
    analysis
+   variablen

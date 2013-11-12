@@ -61,3 +61,19 @@ Seien undendlich viele Fuzzy-Mengen gegeben als: :math:`\{ A_i , i \in I \}` mit
 .. math::
   &C = \bigcup_{i \in I} A_i, \mu_C (x) =_{def.} sup_{i \in I} \mu_{A_i}(x) \\
   &C = \bigcap_{i \in I} A_i, \mu_C (x) =_{def.} inf_{i \in I} \mu_{A_i}(x)
+
+
+
+Konzentrationsoperator
+======================
+
+(Meistens n = 2)
+
+.. math::
+  \mu_{Select A}(x) = (\mu_A(x))^n
+
+Dilatationsoperator
+===================
+
+.. math::
+  \mu_{Mehr oder weniger A}(x) = \sqrt[n]{\mu_A(x)}
