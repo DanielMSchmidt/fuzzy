@@ -4,7 +4,7 @@ Fuzzy-Relationen (binär)
 Definition
 ----------
 
-Sei Y ein Grundbereich der Form :math:`Y = X_1 \times X_2` also :math:`Y ) \{(x,y) \mid x \in X_1 \wedge y \in X_2 \}`. Eine unscharfe (fuzzy) binäre Realtion R über Y ist eine Fuzzy-Teilmenge von Y, also :math:`R \in F(Y)`.
+Sei Y ein Grundbereich der Form :math:`Y = X_1 \times X_2` also :math:`Y = \{(x,y) \mid x \in X_1 \wedge y \in X_2 \}`. Eine unscharfe (fuzzy) binäre Realtion R über Y ist eine Fuzzy-Teilmenge von Y, also :math:`R \in F(Y)`.
 
 Beispiel
 --------
