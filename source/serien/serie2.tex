@@ -1,0 +1,91 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage{url,graphicx,tabularx,array,geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{paralist}
+\usepackage{latexsym}
+\usepackage{fancyhdr}
+\usepackage{siunitx}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{color}
+\usepackage[utf8]{inputenc}
+
+\pagestyle{fancy}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+\setlength{\parskip}{1ex} %--skip lines between paragraphs
+\setlength{\parindent}{0pt} %--don't indent paragraphs
+
+%-- Commands for header
+\newcommand{\headerline}{\begin{tabularx}{\textwidth}{X>{\raggedleft}X}\hline\\\end{tabularx}\\[-0.5cm]}
+\newcommand{\headerleftright}[2]{\begin{tabularx}{\textwidth}{X>{\raggedleft}X}#1%
+& #2\\\end{tabularx}\\[-0.5cm]}
+%\linespread{2} %-- Uncomment for Double Space
+
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true
+  tabsize=3
+}
+
+\begin{document}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhf{}
+\fancyhead[L]{
+\headerleftright{\textbf{Fuzzy - Serie 2}}{David Elvers, Daniel Schmidt}}
+\fancyfoot[C]{\thepage}
+
+\section*{Aufgabe 5}
+$\mu_{R_1} = \{ (X_1, 1), (X_2, 1), (X_3, 0,7), (X_4, 1) \}$ \\
+$\mu_{R_2} = \{ (Y_1, 1), (Y_2, 0,7), (Y_3, 1), (Y_4, 1), (Y_5, 0,9) \}$
+
+\section*{Aufgabe 6}
+a) max - min - Komposition \\
+ \begin{tabular}{c|ccc}
+ & $Z_1$ & $Z_2$ & $Z_3$ \\
+\hline \\
+$X_1$ & 0 & 0 & 0 \\
+$X_2$ & 0 & 0 & 0
+ \end{tabular}
+ \\
+ \\
+ b) max - Produkt - Komposition \\
+  \begin{tabular}{c|ccc}
+ & $Z_1$ & $Z_2$ & $Z_3$ \\
+\hline \\
+$X_1$ & 0,8 & 0,72 & 0,8 \\
+$X_2$ & 1 & 0,9 & 1
+ \end{tabular}
+ \\
+ \\
+ c) max - Durchschnitts - Komposition \\
+ \begin{tabular}{c|ccc}
+ & $Z_1$ & $Z_2$ & $Z_3$ \\
+\hline \\
+$X_1$ & 0,9 & 0,85 & 0,9 \\
+$X_2$ & 1 & 0,95 & 1
+ \end{tabular}
+\end{document}
+
