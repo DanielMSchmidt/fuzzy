@@ -1,0 +1,114 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage{url,graphicx,tabularx,array,geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{paralist}
+\usepackage{latexsym}
+\usepackage{fancyhdr}
+\usepackage{siunitx}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{color}
+\usepackage[utf8]{inputenc}
+
+\pagestyle{fancy}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{pgfplots}
+
+\setlength{\parskip}{1ex} %--skip lines between paragraphs
+\setlength{\parindent}{0pt} %--don't indent paragraphs
+
+%-- Commands for header
+\newcommand{\headerline}{\begin{tabularx}{\textwidth}{X>{\raggedleft}X}\hline\\\end{tabularx}\\[-0.5cm]}
+\newcommand{\headerleftright}[2]{\begin{tabularx}{\textwidth}{X>{\raggedleft}X}#1%
+& #2\\\end{tabularx}\\[-0.5cm]}
+%\linespread{2} %-- Uncomment for Double Space
+
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true
+  tabsize=3
+}
+
+\begin{document}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhf{}
+\fancyhead[L]{
+\headerleftright{\textbf{Fuzzy}}{David Elvers, Daniel Schmidt}}
+\fancyfoot[C]{\thepage}
+
+\section*{Aufgabe 14}
+
+$A+B = (9,4,3)_{LR}$. Die entsprechende Zugehörigkeitsfunktion $\mu_{A+B}$ ist definiert durch:
+
+\begin{equation}
+\mu_{A+B}(x) = \left\{
+ \begin{array}{lll}
+ 	max(0, \frac{9-x}{4})& \text{falls } x \le 9 \\
+	\frac{1}{1+ \frac{x-9}{3}} & \text{falls } x \geq 9 \\
+\end{array}
+\right.	
+\end{equation}
+
+$-A = (-4, 2, 1)_{LR}$. Die entsprechende Zugehörigkeitsfunktion $\mu_{-A}$ ist definiert durch:
+
+\begin{equation}
+\mu_{A+B}(x) = \left\{
+ \begin{array}{lll}
+ 	max(0, 1 - \frac{-4 -x}{2})& \text{falls } x \le -4 \\
+	\frac{1}{x+5} & \text{falls } x \geq -4 \\
+\end{array}
+\right.	
+\end{equation}
+
+Graphisch sehen beide Fuzzy-Zahlen so aus:
+
+\begin{tikzpicture}
+	\begin{axis}[width=500pt,axis x line=middle, axis y line=center, tick align=outside]
+	\addplot coordinates {
+	(-5, 3.5)
+	(0, 2.25)
+	(1, 2)
+	(9, 0)
+	(9, 1)	
+	(10, 0.75)
+	(11, 0.6)
+	};
+	\addlegendentry{A+B}
+	
+	\addplot coordinates {
+	(-5, 5.5)
+	(-4, 5)
+	(-4, 1)
+	(-3, 0.5)
+	(11, 0.0625)
+	};
+	\addlegendentry{-A}
+	\end{axis}
+\end{tikzpicture}
+
+\section*{Aufgabe 15}
+
+\end{document}
+
